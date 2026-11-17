@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+
+    font-family: 'Poppins', sans-serif;
+}
+.overlay{
+    background-image: linear-gradient(180deg, #000000 0%, #0a2236 );
+    opacity:0.8;
+}
+nav{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    
+   
+
+}
+.logo{
+    max-height: 50px;
+    z-index: 99;
+}
+nav ul{
+    z-index: 99;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    position: relative;
+    padding: 8px 0;
+    text-decoration: none;
+    transition: .3s;
+}
+nav ul li a:hover{
+    color: #078dff;
+}
+nav ul li a:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #078dff;
+    transition: .3s;
+}
+nav ul li a:hover:after{
+    width: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: #1a1e23;
+}
+.btn{
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 12px 25px;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 500;
+    transition: all .5s ease-in-out;
+    background-size: 152% 100%;
+    background-image: linear-gradient(135deg, #00fcff, #078dff);
+    text-decoration: none;
+
+}
